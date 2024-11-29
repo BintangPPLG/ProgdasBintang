@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Barang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h1 align="center">Stock Barang</h1>
+        <div class="container-login">
+
+            <form id="biodataform" action="" method="post">
+                <label for="kodeproduk"><b>Kode Produk</b> </label>
+                <input type="text" id="kodeproduk" name="kodeproduk" value="MD-01" disabled />
+
+                <label for="nama"><b>Nama Produk</b> </label>
+                <input type="nama" id="nameproduk" name="nama" required />
+
+                <label for="harga"><b>Harga Produk</b> </label>
+                <input type="number" id="harga" name="harga" required />
+
+                <label for="satuan"><b>Satuan</b></label>
+                <select type="satuan" name="satuan" id="satuan">
+                    <option value="gelas">gelas</option>
+                    <option value="piring">piring</option>
+                </select>
+
+                <label for="kategori"><b>Kategori</b> </label>
+                <select type="kategori" name="kategori" id="kategori">
+                    <option value="makanan">makanan</option>
+                    <option value="minuman">minuman</option>
+                    <option value="buah">buah</option>
+                    <option value="dessert">dessert</option>
+                    <option value="snack">snack</option>
+                </select>
+
+                <label for="urlimage">Url Gambar</label>
+                <input type="url" name="urlimage" id="urlimage" placeholder="Masukan url link">
+
+                <label for="quantity"><b>Quantity</b> </label>
+                <input type="number" name="quantity" id="quantity" placeholder="Masukkan jumlah" required />
+
+                <button type="button" onclick="saveForm()">simpan</button>
+            </form>
+            <section>
+            </section>
+
+    </section>
+
+    <section>
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Kode Produk</th>
+                    <th>Nama Produk</th>
+                    <th>Kategori Produk</th>
+                    <th>Harga Produk</th>
+                    <th>Gambar Produk</th>
+                    <th>Quantity</th>
+                    <th>Modify</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

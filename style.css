@@ -1,0 +1,169 @@
+/* Container utama */
+.container-login {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Judul */
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+input[type=text],
+input[type=nama],
+input[type=number],
+input[type=url],
+select[type=satuan],
+select[type=kategori] {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+/* Fokus pada input */
+input[type=text]:focus,
+input[type=nama]:focus,
+input[type=number]:focus,
+input[type=url]:focus,
+select[type=satuan]:focus,
+select[type=kategori]:focus {
+    border: 1px solid #2d9ae2;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Tombol */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Tabel produk */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Header tabel */
+.product-table th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Isi tabel */
+.product-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Hover pada baris tabel */
+.product-table tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+/* Gambar produk */
+.product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol aksi */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .container-login {
+        width: 90%;
+    }
+
+    .product-table th,
+    .product-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
