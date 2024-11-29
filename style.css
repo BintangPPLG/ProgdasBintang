@@ -167,3 +167,7 @@ button:hover {
         font-size: 14px;
     }
 }
+
+td.bg-red {
+    background-color: #852727;
+}

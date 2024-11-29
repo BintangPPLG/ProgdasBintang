@@ -46,7 +46,7 @@ function updateTable() {
             <td>${product.kategori}</td>
             <td>Rp ${product.harga}</td>
             <td><img src="${product.url}" value="${product.url}" alt="${product.nama}" style="width: 50px; height: 50px;"></td>
-            <td>${product.quantity}</td>
+            <td class="${product.quantity < 5 ? 'bg-red' : ''}">${product.quantity}</td>
             <td>
                 <button onclick="deleteProduct(${index})">Hapus</button>
             </td>
